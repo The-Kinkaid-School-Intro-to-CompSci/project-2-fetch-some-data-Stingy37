@@ -1,0 +1,21 @@
+/** CSS Reset */
+/* You can keep or remove this, if you'd like */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+/** You can define your own CSS variables here */
+:root {
+  /** Example: */
+  --main-background: rgb(61, 125, 202);
+}
+
+/** Project styling */
+
+/** Your styles go here */
