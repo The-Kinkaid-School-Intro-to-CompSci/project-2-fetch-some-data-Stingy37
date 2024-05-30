@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <title>Weather App</title>
+        <script type="text/javascript" src="../javascript/script.js"></script>
+        <link rel="icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <main>
+
+          <!-- a div containing the website title & a location search bar-->
+          <div id="top_div">
+            <p id="title"> Weather.com</p> 
+            <form id="search_form">
+                <input type="text" id="search_field" name="search_field" placeholder="Search location">
+                <input type="submit" value="submit">
+            </form>
+          </div>
+
+          <!-- a div containing several buttons for dif. aspects of weather -->
+          <div id="button_div">
+            <button type="button">Today</button>
+            <button type="button">Hourly</button>
+            <button type="button">10 day</button>
+            <button type="button">Severe Weather</button>
+          </div>
+
+          <!-- a div containing today's forecast in various boxes -->
+          <div id="daily_forecast_div">
+            <div id="daily_forecast_one_div">
+              <div id="forecast_text">
+                <p class="box_headers">TODAY'S FORECAST</p>
+                <div id="forecast_text_content"></div>
+              </div>
+            </div>
+            <div< id="daily_forecast_two_div">
+              <div id="forecast_temperature">
+                <p class="box_headers"> Temperature </p>
+                <img id="temp_image" class="box_images" src="">
+                <div id="forecast_temperature_content"></div>
+              </div>
+              <div id="forecast_wind">
+                <p class="box_headers"> Windspeed </p>
+                <img id="wind_image" class="box_images" src="">
+                <div id="forecast_wind_content"></div>
+              </div>
+              <div id="forecast_precipitation">
+                <p class="box_headers"> Precipitation</p>
+                <img id="precip_image" class="box_images" src="">
+                <div id="forecast_precipitation_content"></div>
+              </div>
+            </div>
+          </div>
+
+        </main>   
+    </body>
+</html>

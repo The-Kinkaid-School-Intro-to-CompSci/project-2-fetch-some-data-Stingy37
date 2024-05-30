@@ -1,0 +1,151 @@
+/* importing a font I like (raleway) */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+
+body {
+    margin: 0px;
+    padding: 0;
+    background: linear-gradient(to bottom,#a0c5e7, #ffffff);
+    background-attachment: fixed;
+
+
+}
+
+/* top menu styles (ie. title + buttons) */
+
+#top_div {
+    height:max-content;
+    background-color: #361c75;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+
+#title {
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+
+}
+
+/* search_form = Location search at the top right */
+
+#search_form input[type="submit"] {
+    display: none; 
+}
+
+#search_form input[type="text"] {
+    height: 30px; 
+    width: 350px; 
+    background-color: white;
+    border: 2px solid;
+    border-color: black;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: transform 0.3s;
+}
+
+#search_form input[type="text"]:focus {
+    transform: scale(1.05);
+}
+
+
+#search_form input[type="text"]:hover {
+    transform: scale(1.05);
+}
+
+#button_div {
+    background-color: #3d85c6ff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#button_div button {
+    background-color: #5b9bd5;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#button_div button:hover {
+    background-color: #2b579a;
+    transform: scale(1.05);
+}
+
+#forecast_text {
+    background-color: white;
+    border-radius: 20px;
+    max-width: 900px;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#forecast_text .box_headers {
+    font-size: 24px;
+    color: #0000ff;
+}
+
+#forecast_text p {
+    font-size: 16px;
+    color: black;
+}
+
+/* content styles (ie. text summary, temperatures, etc.) */
+
+/* First forecast boxes styles */
+
+#daily_forecast_one_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    padding: 40px;
+}
+
+/* Second forecast boxes styles */
+
+#daily_forecast_two_div {
+    display: grid;
+    /* grid-template-columns creates a grid with columns (ie. the divs contained within this div) that are AT LEAST 250px wide 
+    1fr makes the divs will all be equal width */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#forecast_temperature, #forecast_wind, #forecast_precipitation {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+/* Style for the headers in daily_forecast_two_div */
+#daily_forecast_two_div .box_headers {
+    font-size: 24px;
+    color: #0000ff;
+}
+
+.box_images {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
